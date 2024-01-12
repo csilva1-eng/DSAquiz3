@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(Project1)
+project(Quiz3)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -15,7 +15,7 @@ include_directories(src)
 #the first word is the name of the executble
 # everything else are the files to include - yours will probably look a bit different than mine
 add_executable(Main
-        src/main.cpp # your main
+        main.cpp # your main
         # add your own header files below
         )
 
