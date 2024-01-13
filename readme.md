@@ -80,7 +80,6 @@ Make sure that you have the following extensions installed on your VSCode.
 
 - C/C++ (Microsoft)
 - C/C++ Extension Pack (Microsoft)
-- C++ TestMate (Mate Pek)
 - CMake Tools (Microsoft)
 - CMake Language Support (either twxs or Jose Torres)
 
