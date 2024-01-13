@@ -15,13 +15,13 @@ include_directories(src)
 #the first word is the name of the executble
 # everything else are the files to include - yours will probably look a bit different than mine
 add_executable(Main
-        main.cpp # your main
+        src/main.cpp # your main
         # add your own header files below
         )
 
 #this one doesn't include main, instead having your test.cpp
 add_executable(Tests #this will be named Project1 by default - either change it to Tests or see the comment at the bottom of the file
-        test.cpp # your test file
+        src/test.cpp # your test file
         # add your own header files below
         )
         
