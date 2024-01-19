@@ -22,49 +22,51 @@ Note that you get 120 "core hours" per month by default, and 180 with a GitHub P
 In the case that you do run out of hours or you simply no longer wish to use Codespaces, as long as you've been regularly committing to your GitHub repo, you can simply clone your work to your local machine and work on it the regular way, detailed below.
 
 ## Method 2: Local Development Environment
-This is the "regular" way to work on programming quizzes and projects, and lets you use any IDE of your choosing, like CLion (my personal favorite). However, it depends on your local environment having all of the required packages and libraries, namely Catch2. Instructions are provided below, and you are welcome to ask any TA for help in setting up your computer, but if for whatever reason you are absolutely unable to get the toolchain set up, you should fall back on the Codespaces option, which is guaranteed to work.
+This is the "regular" way to work on programming quizzes and projects, and lets you use any IDE of your choosing, like CLion (my personal favorite). However, it depends on your local environment having all of the required packages and libraries, namely Git. Instructions are provided below, and you are welcome to ask any TA for help in setting up your computer, but if for whatever reason you are absolutely unable to get the toolchain set up, you should fall back on the Codespaces option, which is guaranteed to work.
 
-### Installing Catch2
-The provided CMakeLists.txt build file assumes that you are using Catch2 v3, which has much improved testing speeds over the previous versions. Instructions for installing the library system-wide are provided below, partially adapted from [Catch2's documentation](https://github.com/catchorg/Catch2/blob/devel/docs/tutorial.md).
+Catch2 is automatically pulled in to your project by our CMakeLists.txt configuration, and should require no extra work on your part (given that you have git installed and working).
 
-#### Windows (Currently Untested)
-You can use the vcpkg package manager to install the library systemwide. Install instructions for vcpkg are provided [here](docs/cmake-integration.md), but in short, run the following commands from within your project directory:
+<!-- ### Installing Catch2 -->
+<!-- The provided CMakeLists.txt build file assumes that you are using Catch2 v3, which has much improved testing speeds over the previous versions. Instructions for installing the library system-wide are provided below, partially adapted from [Catch2's documentation](https://github.com/catchorg/Catch2/blob/devel/docs/tutorial.md). -->
 
-```cmd
-> git clone https://github.com/microsoft/vcpkg
-> .\vcpkg\bootstrap-vcpkg.bat
-> .\vcpkg\vcpkg install catch2:x64-windows
-```
+<!-- #### Windows (Currently Untested) -->
+<!-- You can use the vcpkg package manager to install the library systemwide. Install instructions for vcpkg are provided [here](docs/cmake-integration.md), but in short, run the following commands from within your project directory: -->
 
-This *should* make Catch2 avaiable to use within your project, but note that I do not have a Windows device to test this on. See the CMake install method below if this doesn't work.
+<!-- ```cmd -->
+<!-- > git clone https://github.com/microsoft/vcpkg -->
+<!-- > .\vcpkg\bootstrap-vcpkg.bat -->
+<!-- > .\vcpkg\vcpkg install catch2:x64-windows -->
+<!-- ``` -->
 
-#### MacOS (Also Untested)
-Catch2 is available from [homebrew](https://brew.sh/), so making Catch2 available should be as simple as 
+<!-- This *should* make Catch2 avaiable to use within your project, but note that I do not have a Windows device to test this on. See the CMake install method below if this doesn't work. -->
 
-```sh
-brew install catch2
-```
+<!-- #### MacOS (Also Untested) -->
+<!-- Catch2 is available from [homebrew](https://brew.sh/), so making Catch2 available should be as simple as  -->
 
-, given that you have homebrew already installed and set up.
+<!-- ```sh -->
+<!-- brew install catch2 -->
+<!-- ``` -->
 
-#### Linux
-If available, you can install Catch2 with your distro's package manager, although it is likely to be fairly to extremely out of date. If the version is lower than 3, you should install from source like so (make sure you have cmake installed):
+<!-- , given that you have homebrew already installed and set up. -->
 
-```sh
-#catch2 local install source: https://github.com/catchorg/Catch2/issues/1383#issuecomment-421548807
-cd
-git clone https://github.com/catchorg/Catch2.git
-cd Catch2
+<!-- #### Linux -->
+<!-- If available, you can install Catch2 with your distro's package manager, although it is likely to be fairly to extremely out of date. If the version is lower than 3, you should install from source like so (make sure you have cmake installed): -->
 
-#note that catch needs to be compiled against C++17, see here: https://stackoverflow.com/questions/66227246/catch2-undefined-reference-to-catchstringmaker
-cmake -Bbuild -H. -DBUILD_TESTING=OFF -DCMAKE_CXX_STANDARD=17
-sudo cmake --build build/ --target install 
-```
+<!-- ```sh -->
+<!-- #catch2 local install source: https://github.com/catchorg/Catch2/issues/1383#issuecomment-421548807 -->
+<!-- cd -->
+<!-- git clone https://github.com/catchorg/Catch2.git -->
+<!-- cd Catch2 -->
 
-#### Platform-Independent CMake method
-This method requires using CMake features to pull Catch2 in from GitHub and attach it to your project. This method involves changing the provided CMakeLists.txt file. A detailed written and video guide is available [here](https://github.com/COP3530/catch-with-cmake), but note that it is written with Project 1 in mind, so you'll have to translate some of the CMake content to the quiz setup instead. 
+<!-- #note that catch needs to be compiled against C++17, see here: https://stackoverflow.com/questions/66227246/catch2-undefined-reference-to-catchstringmaker -->
+<!-- cmake -Bbuild -H. -DBUILD_TESTING=OFF -DCMAKE_CXX_STANDARD=17 -->
+<!-- sudo cmake --build build/ --target install  -->
+<!-- ``` -->
 
-This method is more or less guaranteed to work, but takes some time to set up, and you may run into issues along the way. Treat this as a last resort if you can't get any of the easier methods above working for you. 
+<!-- #### Platform-Independent CMake method -->
+<!-- This method requires using CMake features to pull Catch2 in from GitHub and attach it to your project. This method involves changing the provided CMakeLists.txt file. A detailed written and video guide is available [here](https://github.com/COP3530/catch-with-cmake), but note that it is written with Project 1 in mind, so you'll have to translate some of the CMake content to the quiz setup instead.  -->
+
+<!-- This method is more or less guaranteed to work, but takes some time to set up, and you may run into issues along the way. Treat this as a last resort if you can't get any of the easier methods above working for you.  -->
 
 ### IDE/Editor Setup
 
