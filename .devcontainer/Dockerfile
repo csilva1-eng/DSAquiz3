@@ -17,6 +17,7 @@ RUN if [ "${REINSTALL_CMAKE_VERSION_FROM_SOURCE}" != "none" ]; then \
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
+# commented in favor of catch per project method
 #TODO: currently just downloads latest stable catch - could be problematic, try pinning version later
-COPY ./install_catch.sh /tmp/
-RUN chmod +x /tmp//install_catch.sh && /tmp/install_catch.sh && rm -f /tmp/install_catch.sh
+# COPY ./install_catch.sh /tmp/
+# RUN chmod +x /tmp//install_catch.sh && /tmp/install_catch.sh && rm -f /tmp/install_catch.sh
