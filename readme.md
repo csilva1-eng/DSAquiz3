@@ -1,5 +1,10 @@
 # Completing and Submitting this Assignment
 
+## Video Tutorial
+<!-- Setting up embed: -->
+<!-- https://ardalis.com/how-to-embed-youtube-video-in-github-readme-markdown/ -->
+[![Thumbnail for tutorial video](https://img.youtube.com/vi/R8-glh-Twh4/0.jpg)](https://www.youtube.com/watch?v=R8-glh-Twh4)
+
 ## Which method should I choose?
 
 Method 1 will have you set up with a working programming environment the quickest, and requires no set up on your computer by using cloud containers. You are limited to using VSCode, however, and there is a limit to the amount of time you can spend programming with it, although you are unlikely to run into it. Still, it enables you to work on your project anywhere and on any device, so long as you have a web browser.
@@ -15,7 +20,7 @@ To get started, simply click "Use this template" in the top right of the GitHub 
 
 From here, you can either work in your browser, or open your Codespace through VSCode on your desktop and use any extra themes, settings, or extensions you might have installed.
 
-See [this link](url_tbd) for a video tutorial of the above and more detail on using the development environment in case you are unfamiliar with VSCode and CMake.
+See [this link](https://youtu.be/R8-glh-Twh4) for a video tutorial of the above and more detail on using the development environment in case you are unfamiliar with VSCode and CMake.
 
 Note that you get 120 "core hours" per month by default, and 180 with a GitHub Premium account, included with the free [GitHub Student Developer Pack](https://education.github.com/pack). "Core hours" are calculated by multiplying the number of CPU cores in your virtual by the actual number of hours you use the software for. So, with the (perfectly sufficient) 2-core default, you get 60/90 hours of actual use, which should be plenty for this course. 
 
