@@ -3,7 +3,7 @@
 ## Video Tutorial
 <!-- Setting up embed: -->
 <!-- https://ardalis.com/how-to-embed-youtube-video-in-github-readme-markdown/ -->
-[![Thumbnail for tutorial video](https://img.youtube.com/vi/R8-glh-Twh4/0.jpg)](https://www.youtube.com/watch?v=R8-glh-Twh4)
+[![Thumbnail for tutorial video](https://img.youtube.com/vi/R8-glh-Twh4/maxresdefault.jpg)](https://www.youtube.com/watch?v=R8-glh-Twh4)
 
 ## Which method should I choose?
 
