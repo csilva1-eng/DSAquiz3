@@ -112,17 +112,17 @@ Beyond this setup, the editing/testing process should be the same as outlined in
 
 In src/test.cpp, replace the line at the top that reads `#include <catch2/catch_test_macros.hpp>` with this line:
 ```cpp
-#include "../catch/catch_amalgamated.hpp"
+#include "..test/catch/catch_amalgamated.hpp"
 ```
 
 Run this command once from your project directory:
 ```sh
-g++ -std=c++14 -Werror -Wuninitialized -g -c catch/catch_amalgamated.cpp -o build/catch_amalgamated.o
+g++ -std=c++14 -Werror -Wuninitialized -g -c test/catch/catch_amalgamated.cpp -o build/catch_amalgamated.o
 ```
 Then run these commands in order if you make any subsequent changes:
 
 ```sh
-g++ -std=c++14 -Werror -Wuninitialized -g build/catch_amalgamated.o src/test.cpp -o build/test
+g++ -std=c++14 -Werror -Wuninitialized -g build/catch_amalgamated.o test/test.cpp -o build/test
 ./build/test
 ```
 

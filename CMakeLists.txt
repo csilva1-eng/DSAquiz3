@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(GCC_COVERAGE_COMPILE_FLAGS "-Wall -Werror")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
 
-#pull in desired version of catch through cmake automatically, make it available
+##pull in desired version of catch through cmake automatically, make it available
 Include(FetchContent)
 FetchContent_Declare(
         Catch2
@@ -22,7 +22,7 @@ include_directories(src)
 
 add_executable(Tests
         src/interquartile_range.h
-        src/test.cpp # your test file
+        test/test.cpp # your test file
         # add your own header files below
         )
         
