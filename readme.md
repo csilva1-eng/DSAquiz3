@@ -112,7 +112,7 @@ Beyond this setup, the editing/testing process should be the same as outlined in
 
 In src/test.cpp, replace the line at the top that reads `#include <catch2/catch_test_macros.hpp>` with this line:
 ```cpp
-#include "..test/catch/catch_amalgamated.hpp"
+#include "catch/catch_amalgamated.hpp"
 ```
 
 Also change the include for `interquartile_range.h` with a relative path, like so:
