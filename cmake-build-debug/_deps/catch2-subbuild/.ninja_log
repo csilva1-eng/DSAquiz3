@@ -1,0 +1,21 @@
+# ninja log v6
+0	19	1757695468732025869	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	1f174b074c230dcf
+0	19	1757695468732025869	/Users/christophersilva/CLionProjects/Quiz-3-Catch-Template/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	1f174b074c230dcf
+19	8827	1757695477539859986	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	8cc81ddfc09bce2d
+19	8827	1757695477539859986	/Users/christophersilva/CLionProjects/Quiz-3-Catch-Template/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	8cc81ddfc09bce2d
+8827	8893	1757695477540702945	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	448a5f16e190449
+8827	8893	1757695477540702945	/Users/christophersilva/CLionProjects/Quiz-3-Catch-Template/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	448a5f16e190449
+8893	8911	1757695477624821022	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	f107f27169276117
+8893	8911	1757695477624821022	/Users/christophersilva/CLionProjects/Quiz-3-Catch-Template/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	f107f27169276117
+8911	8930	1757695477643184696	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	4da9d70ee812ac38
+8911	8930	1757695477643184696	/Users/christophersilva/CLionProjects/Quiz-3-Catch-Template/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	4da9d70ee812ac38
+8930	8947	1757695477660897079	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	8d66fc2be759a9c1
+8930	8947	1757695477660897079	/Users/christophersilva/CLionProjects/Quiz-3-Catch-Template/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	8d66fc2be759a9c1
+8948	8966	1757695477679122920	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	b44723aae1566200
+8948	8966	1757695477679122920	/Users/christophersilva/CLionProjects/Quiz-3-Catch-Template/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	b44723aae1566200
+8966	8986	1757695477699831470	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	b33ea50c349059d7
+8966	8986	1757695477699831470	/Users/christophersilva/CLionProjects/Quiz-3-Catch-Template/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	b33ea50c349059d7
+8987	9019	1757695477731733858	CMakeFiles/catch2-populate-complete	3ddae99cc01e2d0b
+8987	9019	1757695477731733858	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	3ddae99cc01e2d0b
+8987	9019	1757695477731733858	/Users/christophersilva/CLionProjects/Quiz-3-Catch-Template/cmake-build-debug/_deps/catch2-subbuild/CMakeFiles/catch2-populate-complete	3ddae99cc01e2d0b
+8987	9019	1757695477731733858	/Users/christophersilva/CLionProjects/Quiz-3-Catch-Template/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	3ddae99cc01e2d0b
